@@ -41,6 +41,11 @@ module.exports = {
 				title: "title 3s ease-out forwards",
 				"fade-left": "fade-left 3s ease-in-out forwards",
 				"fade-right": "fade-right 3s ease-in-out forwards",
+				"jj-separate": "jj-separate 2s ease-out forwards",
+				"jj-fade-out": "jj-fade-out 0.5s ease-out 2s forwards",
+				"name-fade-in": "name-fade-in 1s ease-out 2.5s forwards",
+				"slide-up": "slide-up 0.6s ease-out forwards",
+				"fade-in-up": "fade-in-up 0.8s ease-out forwards",
 			},
 			keyframes: {
 				"fade-in": {
@@ -101,11 +106,65 @@ module.exports = {
 						opacity: "100%",
 					},
 				},
+				"jj-separate": {
+					"0%": {
+						"letter-spacing": "0.1em",
+						opacity: "0",
+					},
+					"50%": {
+						opacity: "1",
+					},
+					"100%": {
+						"letter-spacing": "0.5em",
+						opacity: "1",
+					},
+				},
+				"jj-fade-out": {
+					"0%": {
+						opacity: "1",
+						transform: "scale(1)",
+					},
+					"100%": {
+						opacity: "0",
+						transform: "scale(0.8)",
+					},
+				},
+				"name-fade-in": {
+					"0%": {
+						opacity: "0",
+						transform: "scale(1.2)",
+						"letter-spacing": "0.3em",
+					},
+					"100%": {
+						opacity: "1",
+						transform: "scale(1)",
+						"letter-spacing": "0.05em",
+					},
+				},
+				"slide-up": {
+					"0%": {
+						opacity: "0",
+						transform: "translateY(20px)",
+					},
+					"100%": {
+						opacity: "1",
+						transform: "translateY(0)",
+					},
+				},
+				"fade-in-up": {
+					"0%": {
+						opacity: "0",
+						transform: "translateY(30px)",
+					},
+					"100%": {
+						opacity: "1",
+						transform: "translateY(0)",
+					},
+				},
 			},
 		},
 	},
 	plugins: [
 		require("@tailwindcss/typography"),
-		require("tailwindcss-debug-screens"),
 	],
 };

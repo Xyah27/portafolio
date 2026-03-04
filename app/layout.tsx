@@ -2,20 +2,19 @@ import "../global.css";
 import { Inter } from "@next/font/google";
 import LocalFont from "@next/font/local";
 import { Metadata } from "next";
-import { Analytics } from "./components/analytics";
 
 export const metadata: Metadata = {
   title: {
-    default: "chronark.com",
-    template: "%s | chronark.com",
+    default: "Juan Jose Nunez",
+    template: "%s | Juan Jose Nunez",
   },
-  description: "Co-founder of unkey.dev and founder of planetfall.io",
+  description: "Ingeniero de Sistemas | Full Stack Developer | Especializado en Backend | Ubicado en Cali, Colombia",
   openGraph: {
-    title: "chronark.com",
+    title: "Juan Jose Nunez - Ingeniero de Sistemas",
     description:
-      "Co-founder of unkey.dev and founder of planetfall.io",
-    url: "https://chronark.com",
-    siteName: "chronark.com",
+      "Ingeniero de Sistemas en formacion con enfoque en desarrollo de software backend. Apasionado por crear soluciones escalables.",
+    url: "https://juanjose-portfolio.com",
+    siteName: "Juan Jose Nunez",
     images: [
       {
         url: "https://chronark.com/og.png",
@@ -62,9 +61,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={[inter.variable, calSans.variable].join(" ")}>
-      <head>
-        <Analytics />
-      </head>
+      <head></head>
       <body
         className={`bg-black ${process.env.NODE_ENV === "development" ? "debug-screens" : undefined
           }`}
