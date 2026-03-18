@@ -483,7 +483,7 @@ export default function Home() {
 
           <div className="grid grid-cols-1 gap-8 mx-auto md:grid-cols-2 lg:grid-cols-3">
             {[
-              { techs: ["HTML", "CSS", "JavaScript"], url: "https://www.the-carolina-clean-up-services.com/" },
+              { techs: ["HTML", "CSS", "JavaScript"], url: "https://xyah27.github.io/carolinas-cleanup/" },
               { techs: ["WordPress", "PHP", "CSS"], url: "https://hfcconstruction.com" },
               { techs: ["Next.js", "NestJS", "TypeScript", "Tailwind", "n8n", "PostgreSQL"], url: "https://lwys.vercel.app/" },
             ].map((project, i) => (
