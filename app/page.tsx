@@ -30,6 +30,7 @@ const translations = {
       { title: "The Carolina Clean Up", desc: "Página web freelance para empresa de limpieza residencial en Carolina del Norte. Más de 10 años de experiencia en servicios de limpieza de alta calidad." },
       { title: "HFC Construction Services", desc: "Sitio web para constructora especializada en remodelaciones de alta calidad: cocinas, baños y renovaciones completas de hogares en Charlotte, NC. Fundada por Hugo Correa con más de 27 años de experiencia." },
       { title: "LWYS", desc: "Sistema conversacional de asesoría legal en Colombia con chatbot integrado mediante n8n y base de datos en PostgreSQL. Permite acceso rápido y organizado a abogados especializados, resolviendo la desinformación y agilizando el proceso de contacto y agendamiento." },
+      { title: "Rick & Morty Explorer", desc: "Aplicación móvil desarrollada con Ionic 8 + Angular 19 que consume la API pública de Rick and Morty para explorar personajes, episodios y ubicaciones. Incluye carrusel de personajes, mapa con Mapbox, favoritos persistentes, escáner QR con jsQR y geolocalización, y paginación reactiva." },
     ],
     viewProject: "Ver Proyecto",
     cvTitle: "Mi Hoja de Vida",
@@ -63,6 +64,7 @@ const translations = {
       { title: "The Carolina Clean Up", desc: "Freelance website for a residential cleaning company in North Carolina. Over 10 years of experience delivering high-quality cleaning services." },
       { title: "HFC Construction Services", desc: "Website for a construction company specializing in high-quality remodeling: kitchens, bathrooms, and whole-home renovations in Charlotte, NC. Founded by Hugo Correa with over 27 years of experience." },
       { title: "LWYS", desc: "Conversational legal advisory system for Colombia with a chatbot integrated via n8n and a PostgreSQL database. Provides quick and organized access to specialized lawyers, solving misinformation and streamlining the contact and scheduling process." },
+      { title: "Rick & Morty Explorer", desc: "Mobile app built with Ionic 8 + Angular 19 that uses the Rick and Morty public API to explore characters, episodes, and locations. Features character carousel, Mapbox map, persistent favorites, real-time QR scanner with jsQR and geolocation, and reactive pagination." },
     ],
     viewProject: "View Project",
     cvTitle: "My Resume",
@@ -486,6 +488,7 @@ export default function Home() {
               { techs: ["HTML", "CSS", "JavaScript"], url: "https://xyah27.github.io/carolinas-cleanup/" },
               { techs: ["WordPress", "PHP", "CSS"], url: "https://hfcconstruction.com" },
               { techs: ["Next.js", "NestJS", "TypeScript", "Tailwind", "n8n", "PostgreSQL"], url: "https://lwys.vercel.app/" },
+              { techs: ["Ionic 8", "Angular 19", "TypeScript", "Mapbox GL JS", "Ionic Storage", "jsQR", "Capacitor", "SCSS"], url: "https://api-rickymorty.vercel.app/" },
             ].map((project, i) => (
               <Card key={i} className="animate-fade-in-up" style={{ animationDelay: `${i * 0.1}s` }}>
                 <div className="p-6 flex flex-col h-full">
